@@ -1,13 +1,12 @@
 "use client"
-
 import { Button } from "@/app/_components/ui/button";
-import { BarberShop } from "@prisma/client";
+import { Barbershop } from "@prisma/client";
 import { ChevronLeftIcon, MapPin, MapPinIcon, MenuIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface BarbershopInfoProps {
-    barbershop: BarberShop;
+    barbershop: Barbershop;
 }
 
 const BarbershopInfo = ({barbershop}: BarbershopInfoProps) => {
